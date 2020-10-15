@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Owasp</title>
+</head>
+<body>
+</body>
+</html>
+<script>
+  // Simulate user input injected in function call
+  let xss = "1); alert(2 "
+  eval(`alert(${xss})`)
+  let xss2 = "1&#x29;&#x3b; alert&#x28;2"
+  eval(`alert(${xss2})`)
+</script>

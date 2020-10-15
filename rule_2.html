@@ -1,0 +1,16 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Owasp</title>
+</head>
+<body>
+  <div>
+   <!-- Alert example -->
+   <p class=<script>alert(1)</script></p>
+
+   <!-- Alert corrected with escaping chars -->
+    <p class="&lt;script&gt;alert(1)&lt;/script&gt;"></p>
+  </div>
+</body>
+</html>
+

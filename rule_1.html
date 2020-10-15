@@ -1,0 +1,15 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Owasp</title>
+</head>
+<body>
+  <div>
+    <!-- Basic xss if user added data in body -->
+    <script>alert(1)</script>
+
+    <!-- xss corrected by escaping -->
+    &lt;script&gt;alert(1)&lt;/script&gt;
+  </div>
+</body>
+</html>
