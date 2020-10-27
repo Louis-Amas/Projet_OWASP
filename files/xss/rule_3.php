@@ -7,5 +7,6 @@
 </body>
 </html>
 <script>
-  alert(<?php echo htmlentities($_GET['xss']) ?>)
+  // Run rule_3.js and come to this url with updated xss payload 
+  alert(<?php echo ($_GET['xss']) ?>)
 </script>
