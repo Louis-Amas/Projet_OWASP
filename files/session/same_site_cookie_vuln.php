@@ -3,7 +3,7 @@
     session_start();
     header("Access-Control-Allow-Origin: *");
 ?>
-
+<!-- http://localhost:8080/session/same_site_cookie.php?xss=%60%3Cimg%20src=vo%20onerror=%22window.location=%27https://security.free.beeceptor.com%27%22%3E%27 -->
 <!DOCTYPE html>
 <html>
 <head>
